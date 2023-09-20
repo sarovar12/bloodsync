@@ -28,7 +28,7 @@ const Project = () => {
     },
   ];
   return (
-    <div className=" p-5 md:p-20">
+    <div className=" font-[Poppins] p-5 md:p-20">
       <div className="m-4">
         <p className="flex gap-2 items-center justify-start leading-4 text-[#3B536D] hover:text-black hover:underline cursor-pointer ">
           <MdOutlineKeyboardBackspace /> PROJECTS (FALL 2023)

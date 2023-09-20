@@ -7,7 +7,7 @@ import React from 'react';
 export default function App() {
   return (
     <>
-      <div className="bg-gray-100 min-h-screen">
+      <div className="bg-gray-100 min-h-screen font-[400] font-[Poppins]">
         <Navbar />
         <Project />
         <Footer />

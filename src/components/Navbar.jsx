@@ -24,8 +24,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#3B536D] p-4 flex justify-between items-center">
-      <div className="text-[#EFF7FF] text-xl font-bold">
+    <nav className="bg-[#3B536D] font-[Poppins] p-4 flex justify-between items-center">
+      <div className="text-[#EFF7FF] text-xl font-[400]">
         <img src={logo} alt="Logo" className="h-10 w-72" />
       </div>
       <div className="lg:hidden">
@@ -51,7 +51,7 @@ const Navbar = () => {
             &times;
           </button>
         </div>
-        <ul className="flex uppercase text-2xl font-semibold text-[#3B536D] lg:text-lg lg:text-[#eff7ff]  flex-col space-y-14 lg:space-y-0 lg:space-x-8 lg:flex-row justify-center items-center h-full ">
+        <ul className="flex uppercase text-2xl text-[#3B536D] lg:text-lg lg:text-[#eff7ff]  flex-col space-y-14 lg:space-y-0 lg:space-x-8 lg:flex-row justify-center items-center h-full ">
           <li className="hover:text-[#92E4DC]">
             <a href="https://inspireuvic.org/about">About</a>
           </li>

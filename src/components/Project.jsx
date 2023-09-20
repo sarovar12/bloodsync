@@ -1,6 +1,6 @@
 import { MdOutlineKeyboardBackspace } from 'react-icons/md';
 import Samiksha from '../assets/Samikxya.jpg';
-import Leela from '../assets/leela.jpg';
+import Leela from '../assets/Leela.jpg';
 import Sarovar from '../assets/Sarovar.jpg';
 import Bibek from '../assets/Bibek.jpg';
 
@@ -30,9 +30,9 @@ const Project = () => {
   return (
     <div className=" p-5 md:p-20">
       <div className="m-4">
-        <p className="flex gap-2 items-center justify-start leading-4 text-[#3B536D] hover:text-black hover:underline cursor-pointer ">
+        <a href='https://inspireuvic.org/fall2023' className="flex gap-2 items-center justify-start leading-4 text-[#3B536D] hover:text-black hover:underline cursor-pointer ">
           <MdOutlineKeyboardBackspace /> PROJECTS (FALL 2023)
-        </p>
+          </a>
       </div>
       <p className="text-2xl font-medium leading-6 text-[#3B536D] text-center m-4">
         Fall 2023

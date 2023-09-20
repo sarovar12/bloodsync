@@ -4,6 +4,7 @@ import Leela from "../assets/Leela.jpg";
 import Sarovar from "../assets/Sarovar.jpg";
 import Bibek from "../assets/Bibek.jpg";
 import Group1 from "../assets/Group1.jpg";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const teamMembers = [
@@ -123,6 +124,7 @@ const Project = () => {
           life-saving care.
         </p>
       </div>
+      <Link to="blog">Blog</Link>
       <div className="flex flex-col gap-4 m-5 mt-20 text-center p-5 md:p-20">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">TEAM</p>
         <div className=" flex flex-wrap justify-center gap-20">

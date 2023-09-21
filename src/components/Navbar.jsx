@@ -63,7 +63,7 @@ const Navbar = () => {
             <a href="https://inspireuvic.org/projects">Project</a>
             {projectsDropdownOpen && (
               <div
-                className={`uppercase absolute top-0 right-80 mt-12 bg-[#3B536D] text-[#eff7ff]  border border-[#3B536D] py-2 px-4 w-60`}
+                className={`uppercase absolute top-4 right-96 mt-12 bg-[#3B536D] text-[#eff7ff]  border border-[#3B536D] py-2 px-4 w-60`}
               >
                 {/* Add your dropdown content here */}
                 <ul>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <p className='cursor-pointer'>Network</p>
             {networkDropdownOpen && (
               <div
-                className={` uppercase absolute top-0 right-52 mt-12 bg-[#3B536D]
+                className={` uppercase absolute top-4 right-64 mt-12 bg-[#3B536D]
                  text-[#eff7ff] border border-[#3B536D] py-2 px-4 w-60`}
               >
                 {/* Add your dropdown content here */}
@@ -124,10 +124,10 @@ const Navbar = () => {
             onMouseEnter={toggleMediaDropdown}
             onMouseLeave={toggleMediaDropdown}
           >
-            <a href="#">Media</a>
+            <p className='cursor-pointer'>Media</p>
             {mediaDropdownOpen && (
               <div
-                className={` uppercase absolute top-0 right-0 mt-12
+                className={` uppercase absolute top-5 right-40 mt-12
                 bg-[#3B536D] text-[#eff7ff] border border-[#3B536D] py-2 px-4 w-60`}
               >
                 {/* Add your dropdown content here */}
@@ -157,8 +157,8 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            <div className=" hover:bg-[rgb(185,209,233)] uppercase rounded-full text-[#3B536D] px-4 py-1 mr-2 bg-[#eff7ff]">
-              <a href="https://inspireuvic.org/join-us">Contact</a>
+            <div className=" hover:bg-[rgb(185,209,233)] uppercase rounded-full text-[#3B536D] px-7 py-3 mr-2 bg-[#eff7ff]">
+              <a className='text-[15px] font-[500]' href="https://inspireuvic.org/join-us">Contact</a>
             </div>
           </li>
         </ul>

@@ -85,7 +85,7 @@ const Navbar = () => {
             onMouseLeave={toggleNetworkDropdown}
             className="hover:text-[#92E4DC]"
           >
-            <p className='cursor-pointer'>Network</p>
+            <p className="cursor-pointer">Network</p>
             {networkDropdownOpen && (
               <div
                 className={` uppercase absolute top-4 right-64 mt-12 bg-[#3B536D]
@@ -104,13 +104,11 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="hover:text-[#92E4DC]">
-                    <a href="https://inspireuvic.org/community">
-                      Community
-                    </a>
+                    <a href="https://inspireuvic.org/community">Community</a>
                   </li>
                   <li className="hover:text-[#92E4DC]">
                     <a href="https://inspireuvic.org/initiatives">
-                     Learn More....
+                      Learn More....
                     </a>
                   </li>
 
@@ -124,7 +122,7 @@ const Navbar = () => {
             onMouseEnter={toggleMediaDropdown}
             onMouseLeave={toggleMediaDropdown}
           >
-            <p className='cursor-pointer'>Media</p>
+            <p className="cursor-pointer">Media</p>
             {mediaDropdownOpen && (
               <div
                 className={` uppercase absolute top-5 right-40 mt-12
@@ -158,7 +156,12 @@ const Navbar = () => {
           </li>
           <li>
             <div className=" hover:bg-[rgb(185,209,233)] uppercase rounded-full text-[#3B536D] px-7 py-3 mr-2 bg-[#eff7ff]">
-              <a className='text-[15px] font-[500]' href="https://inspireuvic.org/join-us">Contact</a>
+              <a
+                className="text-[15px] font-[500]"
+                href="https://inspireuvic.org/join-us"
+              >
+                Contact
+              </a>
             </div>
           </li>
         </ul>

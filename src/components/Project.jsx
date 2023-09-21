@@ -1,10 +1,10 @@
-import { MdOutlineKeyboardBackspace } from "react-icons/md";
-import Samiksha from "../assets/Samikxya.jpg";
-import Leela from "../assets/leela.jpg";
-import Sarovar from "../assets/Sarovar.jpg";
-import Bibek from "../assets/Bibek.jpg";
-import Group1 from "../assets/Group1.jpg";
-import { Link } from "react-router-dom";
+import { MdOutlineKeyboardBackspace } from 'react-icons/md';
+import Samiksha from '../assets/Samikxya.jpg';
+import Leela from '../assets/leela.jpg';
+import Sarovar from '../assets/Sarovar.jpg';
+import Bibek from '../assets/Bibek.jpg';
+import Group1 from '../assets/Group1.jpg';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
   const teamMembers = [

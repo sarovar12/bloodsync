@@ -3,15 +3,24 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image1 from '../assets/1000009858.jpg';
 import Image2 from '../assets/1000009866.jpg';
+import { MdOutlineKeyboardBackspace } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 function Blog() {
-
-  useEffect (() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
-},[])
+  }, []);
   return (
-    <>
+    <div className="bg-[rgb(239,247,255)]">
       <Navbar className="font-[Poppins]" />
+      <div className=" m-4">
+        <Link
+          to="/"
+          className="flex gap-2 items-center justify-start leading-4 text-[#3B536D] hover:text-black hover:underline cursor-pointer "
+        >
+          <MdOutlineKeyboardBackspace /> Go back
+        </Link>
+      </div>
       <div className="flex justify-center p-[13px] font-[Poppins] bg-[rgb(239,247,255)] min-h-screen md:p-20">
         <div className="flex flex-col w-full md:w-[60%] h-full">
           <div className="w-full md:p-1 flex justify-start">
@@ -120,7 +129,7 @@ function Blog() {
         </div>
       </div>
       <Footer className="font-[Poppins]" />
-    </>
+    </div>
   );
 }
 

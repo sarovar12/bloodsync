@@ -8,15 +8,15 @@ function Blog() {
   return (
     <>
       <Navbar className='font-[Poppins]'/>
-      <div className="font-[Poppins] bg-[rgb(239,247,255)] min-h-screen p-5 md:p-20">
-        <div className="w-8/10 h-full flex flex-col ">
-          <div className="md:ml-20 md:p-1 justify-start">
-            <p className="text-reg text-lg font-medium underline italic leading-6">
+      <div className="flex justify-center font-[Poppins] bg-[rgb(239,247,255)] min-h-screen p-5 md:p-20">
+        <div className="flex flex-col w-[60%] h-full">
+          <div className="w-full md:p-1 flex justify-start">
+            <p className=" md:pl-4 text-reg text-lg font-medium underline italic leading-6 text-left">
               {' '}
               September 15{' '}
             </p>
           </div>
-          <div className="w-full pt-5 flex justify-center items-center md:pt-2 mb-1 md:mb-2   text-5xl md:text-7xl ">
+          <div className="w-full pt-5 flex justify-start md:pt-2 mb-1 md:mb-2   text-5xl md:text-7xl ">
             <p className="md:pl-4 md:pt-2 font-light font-[Poppins] ">Getting started</p>
           </div>
           <div className="pt-8 flex justify-center items-center flex-col space-x-0  ">
@@ -25,13 +25,13 @@ function Blog() {
               src={Image1}
               alt="Hello"
             />
-            <p className="pt-2 border-b-2 border-black w-full pb-4 md:w-[55%] text-center ">
+            <p className="pt-2 border-b-2 border-black w-full pb-4 md:w-3/4 text-center text-sm ">
               {' '}
-              Our team{' '}
+              Team BloodSync: Sarovar, Samikxya, Leela and Bibek (From Left to right){' '}
             </p>
           </div>
           {/* Text Section */}
-          <div className="w-full mt-4 md:w-[59%] md:ml-56 md:p-6 flex text-justify flex-col space-y-6 font-poppins items-center justify-center">
+          <div className="w-full mt-4 md:p-6 text-justify space-y-6 font-poppins ">
             <p>
               Our week commenced with the successful completion of last week's
               task related to GIS. Afterward, we dedicated some time to gaining
@@ -108,7 +108,7 @@ function Blog() {
               playback session added an extra layer of excitement as we learned
               about other teams' projects and shared our own journey.
             </p>
-            <p className=' flex justify-start'>-Team Blood Sync</p>
+            <p className='text-left'>-Team Blood Sync</p>
           </div>
         </div>
       </div>

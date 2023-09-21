@@ -1,9 +1,10 @@
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import Samiksha from "../assets/Samikxya.jpg";
-import Leela from "../assets/Leela.jpg";
+import Leela from "../assets/leela.jpg";
 import Sarovar from "../assets/Sarovar.jpg";
 import Bibek from "../assets/Bibek.jpg";
 import Group1 from "../assets/Group1.jpg";
+import Image1 from "../assets/1000009858.jpg";
 import { Link } from "react-router-dom";
 
 const Project = () => {
@@ -28,6 +29,14 @@ const Project = () => {
       image: Sarovar,
       bio: "Sarovar is a 3rd year computer science undergrad student studying in Tribhuvan university. Sarovar aspires to create software that is genuinely helpful for everyone. When he is not coding or watching football, you will find him playing a game of chess or exploring nature.",
     },
+  ];
+
+  const blogs = [
+    {
+      title: "Getting Started",
+      image: Image1,
+      text: "Our week commenced with the successful completion of last week's task related to GIS. Afterward, we dedicated some time to gaining a deeper understanding of APIs. This week was primarily focused on API learning, encompassing repository patterns and DTOs, which were effectively implemented in",
+    }
   ];
   return (
     <div>
@@ -124,7 +133,27 @@ const Project = () => {
           life-saving care.
         </p>
       </div>
-      <Link to="blog">Blog</Link>
+      <div className="flex flex-col gap-4 m-5 md:mt-20 text-center p-5 w-fit">
+        <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">
+          BLOG
+        </p>
+        <div className="flex justify-center gap-8">
+          {blogs.map((oneBlog) => (
+            <div className=" w-1/4 p-5 my-5 flex flex-col gap-2 justify-start items-start border rounded-md">
+              <p className="text-xl font-medium leading-6">{oneBlog.title}</p>
+              <div className="w-full h-full">
+                <img src={oneBlog.image} alt="image of group" />
+              </div>
+              <div className="w-full h-1/2 text-sm text-justify">
+                {oneBlog.text}{" "}
+                <Link to="blog">
+                  <span className="text-blue-500">Read More..</span>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="flex flex-col gap-4 m-5 mt-20 text-center p-5 md:p-20">
         <p className="text-5xl leading-10 tracking-wide text-[#3B536D]">TEAM</p>
         <div className=" flex flex-wrap justify-center gap-20">

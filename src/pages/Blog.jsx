@@ -100,6 +100,9 @@ function Blog() {
               realization significantly boosted our motivation and dedication to
               the project.
             </p>
+            <div className=" py-2">
+              <img src={Image2} alt="Entire team" />
+            </div>
 
             <p>
               At the end of the sprint, we had a playback session. Playback

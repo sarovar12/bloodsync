@@ -42,7 +42,7 @@ function Blog() {
             />
             <p className="pt-2 border-b-2 border-black w-full pb-4 md:w-3/4 text-center text-sm ">
               {' '}
-              Team BloodSync: Sarovar, Samikxya, Leela and Bibek (From Left to
+              Team BloodSync: Sarovar, Samiksha, Leela and Bibek (From Left to
               right){' '}
             </p>
           </div>

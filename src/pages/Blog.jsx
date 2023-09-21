@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Image1 from '../assets/1000009858.jpg';
 import Image2 from '../assets/1000009866.jpg';
+import { MdOutlineKeyboardBackspace } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 function Blog() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <>
-      <Navbar className='font-[Poppins]'/>
-      <div className="flex justify-center font-[Poppins] bg-[rgb(239,247,255)] min-h-screen p-5 md:p-20">
-        <div className="flex flex-col w-[60%] h-full">
+    <div className="bg-[rgb(239,247,255)]">
+      <Navbar className="font-[Poppins]" />
+      <div className=" m-4">
+        <Link
+          to="/"
+          className="flex gap-2 items-center justify-start leading-4 text-[#3B536D] hover:text-black hover:underline cursor-pointer "
+        >
+          <MdOutlineKeyboardBackspace /> Go back
+        </Link>
+      </div>
+      <div className="flex justify-center p-[13px] font-[Poppins] bg-[rgb(239,247,255)] min-h-screen md:p-20">
+        <div className="flex flex-col w-full md:w-[60%] h-full">
           <div className="w-full md:p-1 flex justify-start">
             <p className=" md:pl-4 text-reg text-lg font-medium underline italic leading-6 text-left">
               {' '}
@@ -17,7 +30,9 @@ function Blog() {
             </p>
           </div>
           <div className="w-full pt-5 flex justify-start md:pt-2 mb-1 md:mb-2   text-5xl md:text-7xl ">
-            <p className="md:pl-4 md:pt-2 font-light font-[Poppins] ">Getting started</p>
+            <p className="md:pl-4 md:pt-2 font-light font-[Poppins] ">
+              Getting started
+            </p>
           </div>
           <div className="pt-8 flex justify-center items-center flex-col space-x-0  ">
             <img
@@ -27,11 +42,12 @@ function Blog() {
             />
             <p className="pt-2 border-b-2 border-black w-full pb-4 md:w-3/4 text-center text-sm ">
               {' '}
-              Team BloodSync: Sarovar, Samikxya, Leela and Bibek (From Left to right){' '}
+              Team BloodSync: Sarovar, Samikxya, Leela and Bibek (From Left to
+              right){' '}
             </p>
           </div>
           {/* Text Section */}
-          <div className="w-full mt-4 md:p-6 text-justify space-y-6 font-poppins ">
+          <div className="w-full mt-4 md:p-6 text-justify space-y-2 md:space-y-6 font-poppins ">
             <p>
               Our week commenced with the successful completion of last week's
               task related to GIS. Afterward, we dedicated some time to gaining
@@ -84,6 +100,9 @@ function Blog() {
               realization significantly boosted our motivation and dedication to
               the project.
             </p>
+            <div className=" py-2">
+              <img src={Image2} alt="Entire team" />
+            </div>
 
             <p>
               At the end of the sprint, we had a playback session. Playback
@@ -108,12 +127,12 @@ function Blog() {
               playback session added an extra layer of excitement as we learned
               about other teams' projects and shared our own journey.
             </p>
-            <p className='text-left'>-Team Blood Sync</p>
+            <p className="text-left">-Team Blood Sync</p>
           </div>
         </div>
       </div>
-      <Footer className='font-[Poppins]'/>
-    </>
+      <Footer className="font-[Poppins]" />
+    </div>
   );
 }
 

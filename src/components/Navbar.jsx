@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#3B536D] font-[Poppins] p-4 flex justify-between items-center">
       <div className="text-[#EFF7FF] text-xl font-[400]">
-        <img src={logo} alt="Logo" className="h-10 w-72" />
+        <a href='https://inspireuvic.org/'><img src={logo} alt="Logo" className="h-10 w-72" /></a>
       </div>
       <div className="lg:hidden">
         <button

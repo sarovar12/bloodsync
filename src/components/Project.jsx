@@ -80,7 +80,7 @@ const Project = () => {
           critical times of need. In addition to the stress of medical
           procedures, patients' relatives must also deal with the added burden
           of sourcing blood. This problem deeply affects the livelihoods of
-          people in Rukum and nearby regions. The ABCD team from Inspire Nepal
+          people in Rukum and nearby regions. The BloodSync team from Inspire Nepal
           is determined to collaborate in resolving this critical issue. Our
           team intends to leverage the potential of Information Technology to
           address this problem.
